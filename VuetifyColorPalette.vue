@@ -9,9 +9,9 @@
     >
       <v-card-title class="mr-5">{{ themeName }}</v-card-title>
 
-      <div v-for="(color, key) in theme" :key="key" class="ma-4">
+      <div v-for="(color, colorName) in theme" :key="colorName" class="ma-4">
         <v-card :color="color" height="100px" width="100px" shaped />
-        <div class="mt-1 ml-1">{{ key }}</div>
+        <div class="mt-1 ml-1">{{ colorName }}</div>
       </div>
     </v-card>
   </div>
